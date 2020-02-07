@@ -19,7 +19,6 @@ void pop_heap();
 void sift_down(int x = 0);
 void heap_sort(int N);
 void sift_up(int x);
-void make_heap_sift_up(int N);
 bool del_heap(int x = 0);
 bool insert_heap(int value);
 
@@ -118,7 +117,7 @@ void make_heap_sift_up(int N) {
     return;
 }
 
-// O(lgn)
+// O(logn)
 bool del_heap(int x) {
     // 异常处理
     if (x < 0 || x >= current) return false;
